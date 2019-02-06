@@ -1,52 +1,51 @@
-
- .mentor-section {
-     display: flex;
-     justify-content: space-around;
-     margin-bottom: 20px;
-     border-bottom: solid 1px gray;
-     padding-top: 70px;
-     padding-bottom: 70px;
-
-     img {
-            width: 25%;
-            height: auto;
-            border-radius: 10px;
-     }
- }
-
  .header-section {
      display: flex;
-     justify-content: space-around;
-     border-bottom: solid 1px gray;
-     margin-bottom: 20px;
+     justify-content: left;
+     //border-bottom: solid 1px white;
+     //margin-bottom: 20px;
      background-color: @main-color-blue;
      padding-top: 70px;
-     padding-bottom: 70px;
+     padding-bottom: 150px;
+    // border: 1px solid black;
       
- 
+    
 
-        .info-one {
-            width: 35%;
-            padding: 10px;
+        .made {
+            //border: black 1px solid;
+            margin-left: 20px;
+            color: aliceblue;
+            font-size: 50px;
+
+                .easy-span {
+                     //border: black 1px solid;
+                    color: aliceblue;
+                    font-size: 100px;
+                    
+
+                     span {
+                        color: @btn-border-color;
+                    }
+                  }
             
-            
         }
 
-        .info-two{
-            width: 35%;
-            padding: 10px;
-        }
+        // .easy {
+        //     //border: black 1px solid;
+        //     margin-left: 20px;
+        //     color: aliceblue;
+        //     font-size: 100px;
 
-        .info-three{ 
-            width: 35%;
-            padding: 10px;
-        }
-
+        //     span {
+        //         color: @btn-border-color;
+        //     }
+        // }
  }
 
+
+
  .feature-section {
-     border-bottom: 1px solid gray;
-     margin-bottom: 40px;
+     //border: 1px solid white;
+     //margin-bottom: 40px;
      background-color: @main-color-blue;
      padding-top: 70px;
      padding-bottom: 70px;
@@ -55,6 +54,7 @@
 
         .eye-row {
             display: flex;
+            margin-bottom: 20px;
             //border: 1px solid black;
 
                 .fa-eye {
@@ -62,6 +62,7 @@
                     //border: 1px solid black;
                     font-size: 150px;
                     text-align: center;
+                    color: @icon-color;
                 }
 
         }
@@ -76,6 +77,8 @@
 
         .schedule-row {
             display: flex;
+            margin-bottom: 50px;
+            margin-top: 50px;
             //border: 1px solid black;
 
                 .fa-calendar-alt {
@@ -83,11 +86,15 @@
                     //border: 1px solid black;
                     font-size: 150px;
                     text-align: center;
+                    color: @icon-color;
                 }
         }
 
             .edit-row {
                 display: flex;
+                margin-bottom: 50px;
+
+                
                // border: 1px solid black;
             
 
@@ -96,6 +103,7 @@
                         //border: 1px solid black;
                         font-size: 150px;
                         text-align: center;
+                        color: @icon-color;
                     }
             }
 
@@ -112,18 +120,45 @@
         // }
         
 
+        @keyframes float {
+            0% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px);
+            }
+            50% {
+                box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+                transform: translatey(-20px);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px);
+            }
+        }
+
         .feature-card {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            border: 1px solid black;
+            //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            //box-shadow: 0 4px 8px 0 @btn-border-color;
+            //border: 1px solid black;
             margin: 10px;
             padding-left: 10px;
             padding-right: 10px;
             border-radius: 5px;
-            width: 50%;
-        
+            width: 50%; 
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+	        animation: float 6s ease-in-out infinite;
+            
+           
+            p {
+                border: none;
+                color: @icon-color;
+            }
 
                 .feature-heading {
-                    border: 1px solid black;
+                    //border: 1px solid black;
+                    //color: @btn-border-color;
+                    color: @btn-border-color;
+
                 
                 }
 
@@ -136,14 +171,18 @@
      display: flex;
      justify-content: center;
      background-color: @main-color-blue;
+     padding-top: 70px;
+     //border: 1px solid black;
     
 
         .fat-login {
-            padding: 35px;
+            display: flex;
+            justify-content: center;
+            padding: 20px 40px;
+            border: 2px solid @btn-border-color;
+            border-radius: 5px;
+            background-color: @main-color-blue;
+            color: @btn-border-color;
             font-size: 60px;
-            
         }
  }
-
-
-
