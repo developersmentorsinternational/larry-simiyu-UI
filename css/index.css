@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Courier New', Courier, monospace;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+body {
+  background-color: #2f2fa2;
+}
+.main-nav {
+  border: 1px solid red;
+}
+.main-nav nav {
+  padding-right: 100%;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: right;
+}
+.main-nav nav .btn {
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.mentor-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-bottom: solid 1px gray;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.mentor-section img {
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+}
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 1px gray;
+  margin-bottom: 20px;
+  background-color: #2f2fa2;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.header-section .info-one {
+  width: 35%;
+  padding: 10px;
+}
+.header-section .info-two {
+  width: 35%;
+  padding: 10px;
+}
+.header-section .info-three {
+  width: 35%;
+  padding: 10px;
+}
+.feature-section {
+  border-bottom: 1px solid gray;
+  margin-bottom: 40px;
+  background-color: #2f2fa2;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-section .eye-row {
+  display: flex;
+}
+.feature-section .eye-row .fa-eye {
+  width: 50%;
+  font-size: 150px;
+  text-align: center;
+}
+.feature-section .schedule-row {
+  display: flex;
+}
+.feature-section .schedule-row .fa-calendar-alt {
+  width: 50%;
+  font-size: 150px;
+  text-align: center;
+}
+.feature-section .edit-row {
+  display: flex;
+}
+.feature-section .edit-row .fa-edit {
+  width: 50%;
+  font-size: 150px;
+  text-align: center;
+}
+.feature-section .feature-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  width: 50%;
+}
+.feature-section .feature-card .feature-heading {
+  border: 1px solid black;
+}
+.login-section {
+  display: flex;
+  justify-content: center;
+  background-color: #2f2fa2;
+}
+.login-section .fat-login {
+  padding: 35px;
+  font-size: 60px;
+}
