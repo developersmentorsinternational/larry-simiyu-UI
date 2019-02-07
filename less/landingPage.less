@@ -6,10 +6,13 @@
      background-color: @main-color-blue;
      padding-top: 70px;
      padding-bottom: 150px;
-    //border: 1px solid black;
+        //border: 1px solid black;
 
         @media @phone {
             padding-bottom:40px;
+            padding-top: 20px;
+        
+
         }
       
     
@@ -20,10 +23,20 @@
             color: aliceblue;
             font-size: 50px;
 
+                @media @phone {
+                    margin-left: 0;
+                }
+
+                
+
                 .easy-span {
                      //border: black 1px solid;
                     color: aliceblue;
                     font-size: 100px;
+
+                        @media @phone {
+                            font-size: 60px;
+                        }
                     
 
                      span {

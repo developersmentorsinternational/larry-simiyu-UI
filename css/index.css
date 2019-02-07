@@ -58,6 +58,7 @@ footer {
 @media (max-width: 500px) {
   .header-section {
     padding-bottom: 40px;
+    padding-top: 20px;
   }
 }
 .header-section .made {
@@ -65,9 +66,19 @@ footer {
   color: aliceblue;
   font-size: 50px;
 }
+@media (max-width: 500px) {
+  .header-section .made {
+    margin-left: 0;
+  }
+}
 .header-section .made .easy-span {
   color: aliceblue;
   font-size: 100px;
+}
+@media (max-width: 500px) {
+  .header-section .made .easy-span {
+    font-size: 60px;
+  }
 }
 .header-section .made .easy-span span {
   color: #f64c72;
