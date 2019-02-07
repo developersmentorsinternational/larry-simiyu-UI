@@ -5,7 +5,7 @@ class TabLink {
 
         // if user clicked view or specific category 
 
-        if(this.tabData === 'ALL'){
+        if(this.tabData === 'all'){
             this.cards = document.querySelectorAll('.card');
         } else {
             this.cards = document.querySelectorAll(`.card[data-tab='${this.tabData}']`);
@@ -24,9 +24,10 @@ class TabLink {
 
         selectTab() {
             const tabs = document.querySelectorAll('.tab');
-
+            console.log('clicked');
             tabs.forEach( tab => {
                 tab.classList.remove('active-tab');
+                
             });
 
 
@@ -34,9 +35,11 @@ class TabLink {
 
                 cards.forEach(card => {
                     card.style.display = "none";
+                    card.classList.remove('full-width');
                 })
 
                 this.tab.classList.add('active-tab');
+                
 
                     //loop through this cards array  invoke selectCard() from TabCard class  
                 this.cards.forEach(card => card.selectCard());
@@ -51,6 +54,7 @@ class TabCard {
 
     selectCard() {
         this.cardElement.style.display = null;
+        this.cardElement.classList.add('full-width');
     }
 }
 

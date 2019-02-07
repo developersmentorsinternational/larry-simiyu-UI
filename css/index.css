@@ -191,19 +191,61 @@ footer {
   color: #f64c72;
   font-size: 60px;
 }
-.card {
+.tabs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
   border: 1px solid black;
 }
-.tab {
+.tabs .tab {
+  width: 75%;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #f64c72;
   margin: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  color: #f64c72;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
 }
-.tab:hover {
+.tabs .tab:hover {
   text-decoration: underline;
 }
-.tab .active-tab {
-  background-color: white;
-  color: black;
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.card-container img {
+  height: auto;
+  width: 100%;
+  max-height: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+}
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+.card {
+  width: 30%;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #9BC4E2;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  color: #f64c72;
+}
+.active-tab {
+  background-color: #ffffff;
+  color: #ffffff;
   border: 2px solid black;
 }

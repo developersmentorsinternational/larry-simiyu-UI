@@ -228,21 +228,81 @@
 
  // about page 
 
- .card {
+ .tabs {
+     //border: 1px solid red;
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 35px;
      border: 1px solid black;
+     
+        .tab {
+                width: 75%;
+                cursor: pointer;
+                border: 1px solid @btn-border-color;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                border-radius: 10px;
+                color: @btn-border-color;
+                padding: 10px;
+                &:hover {
+                   text-decoration: underline;
+                }
+                font-family: @main-font;
+                font-size: 10px;
+                
+                
+        
+            
+        }
+
  }
 
- .tab {
-     cursor: pointer;
-     border: 1px solid black;
-     margin: 10px;
-     &:hover {
-        text-decoration: underline;
-     }
-     .active-tab {
-         background-color: white;
-         color: black;
-         border: 2px solid black;
-     }
-     
+    .card-container {
+        display: flex;
+        flex-flow: row wrap;
+       
+
+               img{
+                   height: auto;
+                   width: 100%;
+                   max-height: 100%;
+                   max-width: 400px;
+                   //margin: 1rem;
+                   border-radius: 50%;
+                   
+               }
+       
+        }
+
+    
+ 
+ .full-width {
+     width: 100%;
+     margin: 0 auto;
  }
+ 
+ .card {
+    //border: 1px solid black;
+    width: 30%;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: @card-color;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: @main-font;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    color: @btn-border-color;
+
+}
+
+ .active-tab {
+    background-color: @icon-color;
+    color:@icon-color;
+    border: 2px solid black;
+}
