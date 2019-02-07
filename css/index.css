@@ -6,7 +6,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Archivo Black', Courier, monospace;
 }
 .container {
   max-width: 800px;
@@ -15,65 +15,76 @@ h5 {
 }
 p {
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 2;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 1px solid black;
+  margin-top: 0;
 }
 body {
-  background-color: #2f2fa2;
-}
-.main-nav {
-  border: 1px solid red;
+  background-color: #6CA6CD;
 }
 .main-nav nav {
-  padding-right: 100%;
   width: 100%;
-  border: 1px solid black;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
+  padding-left: 20px;
+  background-color: #6CA6CD;
+  align-content: baseline;
 }
 .main-nav nav .btn {
+  margin-top: 10px;
   padding: 10px;
   padding-right: 25px;
   padding-left: 25px;
-  margin-bottom: 10px;
-}
-.mentor-section {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  border-bottom: solid 1px gray;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-.mentor-section img {
-  width: 25%;
-  height: auto;
+  background: #6CA6CD;
+  border: 2px solid #f64c72;
   border-radius: 10px;
+  color: #f64c72;
+}
+footer {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Archivo Black', Courier, monospace;
+  color: #f64c72;
 }
 .header-section {
   display: flex;
-  justify-content: space-around;
-  border-bottom: solid 1px gray;
-  margin-bottom: 20px;
-  background-color: #2f2fa2;
+  justify-content: left;
+  background-color: #6CA6CD;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 150px;
 }
-.header-section .info-one {
-  width: 35%;
-  padding: 10px;
+@media (max-width: 500px) {
+  .header-section {
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
 }
-.header-section .info-two {
-  width: 35%;
-  padding: 10px;
+.header-section .made {
+  margin-left: 20px;
+  color: aliceblue;
+  font-size: 50px;
 }
-.header-section .info-three {
-  width: 35%;
-  padding: 10px;
+@media (max-width: 500px) {
+  .header-section .made {
+    margin-left: 0;
+  }
+}
+.header-section .made .easy-span {
+  color: aliceblue;
+  font-size: 100px;
+}
+@media (max-width: 500px) {
+  .header-section .made .easy-span {
+    font-size: 60px;
+  }
+}
+.header-section .made .easy-span span {
+  color: #f64c72;
 }
 .feature-section {
-  border-bottom: 1px solid gray;
-  margin-bottom: 40px;
-  background-color: #2f2fa2;
+  background-color: #6CA6CD;
   padding-top: 70px;
   padding-bottom: 70px;
   display: flex;
@@ -81,46 +92,172 @@ body {
 }
 .feature-section .eye-row {
   display: flex;
+  margin-bottom: 20px;
 }
 .feature-section .eye-row .fa-eye {
   width: 50%;
   font-size: 150px;
   text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .feature-section .eye-row .fa-eye {
+    display: none;
+  }
 }
 .feature-section .schedule-row {
   display: flex;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .feature-section .schedule-row .fa-calendar-alt {
   width: 50%;
   font-size: 150px;
   text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .feature-section .schedule-row .fa-calendar-alt {
+    display: none;
+  }
 }
 .feature-section .edit-row {
   display: flex;
+  margin-bottom: 50px;
 }
 .feature-section .edit-row .fa-edit {
   width: 50%;
   font-size: 150px;
   text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .feature-section .edit-row .fa-edit {
+    display: none;
+  }
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
 .feature-section .feature-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
   margin: 10px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 5px;
   width: 50%;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  background-color: #9BC4E2;
+}
+@media (max-width: 500px) {
+  .feature-section .feature-card {
+    width: 100%;
+    margin: 0px;
+    animation: none;
+  }
+}
+.feature-section .feature-card p {
+  border: none;
+  color: #ffffff;
 }
 .feature-section .feature-card .feature-heading {
-  border: 1px solid black;
+  color: #f64c72;
 }
 .login-section {
   display: flex;
   justify-content: center;
-  background-color: #2f2fa2;
+  background-color: #6CA6CD;
+  padding-top: 70px;
 }
 .login-section .fat-login {
-  padding: 35px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  border: 2px solid #f64c72;
+  border-radius: 5px;
+  background-color: #6CA6CD;
+  color: #f64c72;
   font-size: 60px;
+}
+a {
+  text-decoration: none;
+}
+.tabs {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+}
+@media (max-width: 500px) {
+  .tabs {
+    width: 100%;
+  }
+}
+.tabs .tab {
+  width: 75%;
+  cursor: pointer;
+  border: 1px solid #f64c72;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  color: #f64c72;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 10px;
+}
+.tabs .tab:hover {
+  color: white;
+}
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.card-container img {
+  height: auto;
+  width: 100%;
+  max-height: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+}
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+.card {
+  width: 30%;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #9BC4E2;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  color: #f64c72;
+}
+.active-tab {
+  color: #f64c72;
 }
