@@ -191,11 +191,13 @@ footer {
   color: #f64c72;
   font-size: 60px;
 }
+a {
+  text-decoration: none;
+}
 .tabs {
   display: flex;
   flex-direction: row;
   margin-bottom: 35px;
-  border: 1px solid black;
 }
 .tabs .tab {
   width: 75%;
@@ -211,11 +213,12 @@ footer {
   font-size: 10px;
 }
 .tabs .tab:hover {
-  text-decoration: underline;
+  color: white;
 }
 .card-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 .card-container img {
   height: auto;
@@ -245,7 +248,5 @@ footer {
   color: #f64c72;
 }
 .active-tab {
-  background-color: #ffffff;
-  color: #ffffff;
-  border: 2px solid black;
+  color: #f64c72;
 }
