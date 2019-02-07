@@ -26,16 +26,16 @@ body {
 .main-nav nav {
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   padding-left: 20px;
   background-color: #6CA6CD;
+  align-content: baseline;
 }
 .main-nav nav .btn {
   margin-top: 10px;
   padding: 10px;
   padding-right: 25px;
   padding-left: 25px;
-  margin-bottom: 10px;
   background: #6CA6CD;
   border: 2px solid #f64c72;
   border-radius: 10px;
@@ -159,6 +159,7 @@ footer {
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
+  background-color: #9BC4E2;
 }
 @media (max-width: 500px) {
   .feature-section .feature-card {
@@ -189,4 +190,20 @@ footer {
   background-color: #6CA6CD;
   color: #f64c72;
   font-size: 60px;
+}
+.card {
+  border: 1px solid black;
+}
+.tab {
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 10px;
+}
+.tab:hover {
+  text-decoration: underline;
+}
+.tab .active-tab {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
