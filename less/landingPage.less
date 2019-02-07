@@ -234,12 +234,20 @@
 
  // about page 
 
+
+
+
  .tabs {
      //border: 1px solid red;
      display: flex;
      flex-direction: row;
      margin-bottom: 35px;
      //border: 1px solid black;
+     
+        @media @phone {
+            .phone-width();
+
+        }
      
         .tab {
                 width: 75%;
@@ -257,10 +265,7 @@
                 }
                 font-family: @main-font;
                 font-size: 10px;
-                
-                
-        
-            
+
         }
 
  }
@@ -269,6 +274,12 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+
+            @media @phone {
+                display: flex;
+                justify-content: space-around;
+
+            }
        
 
                img{

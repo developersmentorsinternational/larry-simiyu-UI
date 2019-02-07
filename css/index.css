@@ -199,6 +199,11 @@ a {
   flex-direction: row;
   margin-bottom: 35px;
 }
+@media (max-width: 500px) {
+  .tabs {
+    width: 100%;
+  }
+}
 .tabs .tab {
   width: 75%;
   cursor: pointer;
@@ -219,6 +224,12 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .card-container img {
   height: auto;
