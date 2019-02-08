@@ -252,7 +252,7 @@ a {
   margin: 0 auto;
 }
 .card {
-  width: 30%;
+  width: 45%;
   margin: 1rem;
   border-radius: 1rem;
   background-color: #9BC4E2;
@@ -266,6 +266,10 @@ a {
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
   color: #f64c72;
+}
+.card img {
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
 }
 @media (max-width: 500px) {
   .card {

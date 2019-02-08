@@ -317,7 +317,7 @@
  
  .card {
     //border: 1px solid black;
-    width: 30%;
+    width: 45%;
     margin: 1rem;
     border-radius: 1rem;
     background-color: @card-color;
@@ -333,13 +333,18 @@
     color: @btn-border-color;
     //border: 1px solid black;
 
-    @media @phone {
-        .phone-width();
-        margin: 0px;
-        animation: none;
-        margin-bottom: 10px;
-        
-    }
+        img {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+
+            @media @phone {
+                .phone-width();
+                margin: 0px;
+                animation: none;
+                margin-bottom: 10px;
+                
+            }
 
     @media @tablet {
         width: 100%;
