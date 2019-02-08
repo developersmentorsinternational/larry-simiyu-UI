@@ -202,7 +202,6 @@ a {
 @media (max-width: 500px) {
   .tabs {
     width: 100%;
-    border: 1px solid red;
     flex-direction: column;
     align-items: center;
   }
@@ -210,7 +209,7 @@ a {
 .tabs .tab {
   width: 75%;
   cursor: pointer;
-  border: 1px solid #f64c72;
+  border: 2px solid #f64c72;
   margin: 10px;
   display: flex;
   justify-content: center;
@@ -223,11 +222,15 @@ a {
 .tabs .tab:hover {
   color: white;
 }
+@media (max-width: 500px) {
+  .tabs .tab {
+    width: 100%;
+  }
+}
 .card-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  border: 1px solid black;
 }
 @media (max-width: 500px) {
   .card-container {
@@ -270,6 +273,12 @@ a {
     margin: 0px;
     animation: none;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    width: 100%;
+    animation: none;
   }
 }
 .active-tab {
