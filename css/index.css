@@ -202,6 +202,9 @@ a {
 @media (max-width: 500px) {
   .tabs {
     width: 100%;
+    border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .tabs .tab {
@@ -224,11 +227,14 @@ a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  border: 1px solid black;
 }
 @media (max-width: 500px) {
   .card-container {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .card-container img {
@@ -257,6 +263,14 @@ a {
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
   color: #f64c72;
+}
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+    margin: 0px;
+    animation: none;
+    margin-bottom: 10px;
+  }
 }
 .active-tab {
   color: #f64c72;
