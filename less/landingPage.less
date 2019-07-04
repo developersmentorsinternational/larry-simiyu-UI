@@ -1,327 +1,315 @@
- .header-section {
-     display: flex;
-     justify-content: left;
-     //border-bottom: solid 1px white;
-     //margin-bottom: 20px;
-     background-color: @main-color-blue;
-     padding-top: 70px;
-     padding-bottom: 150px;
-        //border: 1px solid black;
+.header-section {
+  display: flex;
+  justify-content: left;
+  //border-bottom: solid 1px white;
+  //margin-bottom: 20px;
+  background-color: @main-color-blue;
+  padding-top: 70px;
+  padding-bottom: 150px;
+  //border: 1px solid black;
 
-        @media @phone {
-            padding-bottom:40px;
-            padding-top: 20px;
-        
+  @media @phone {
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
 
-        }
-      
-    
+  .made {
+    //border: black 1px solid;
+    margin-left: 20px;
+    color: aliceblue;
+    font-size: 50px;
 
-        .made {
-            //border: black 1px solid;
-            margin-left: 20px;
-            color: aliceblue;
-            font-size: 50px;
+    @media @phone {
+      margin-left: 0;
+    }
 
-                @media @phone {
-                    margin-left: 0;
-                }
+    .easy-span {
+      //border: black 1px solid;
+      color: aliceblue;
+      font-size: 100px;
 
-                
+      @media @phone {
+        font-size: 60px;
+      }
 
-                .easy-span {
-                     //border: black 1px solid;
-                    color: aliceblue;
-                    font-size: 100px;
+      span {
+        color: @btn-border-color;
+      }
+    }
+  }
 
-                        @media @phone {
-                            font-size: 60px;
-                        }
-                    
+  // .easy {
+  //     //border: black 1px solid;
+  //     margin-left: 20px;
+  //     color: aliceblue;
+  //     font-size: 100px;
 
-                     span {
-                        color: @btn-border-color;
-                    }
-                  }
-            
-        }
+  //     span {
+  //         color: @btn-border-color;
+  //     }
+  // }
+}
 
-        // .easy {
-        //     //border: black 1px solid;
-        //     margin-left: 20px;
-        //     color: aliceblue;
-        //     font-size: 100px;
+.feature-section {
+  //border: 1px solid white;
+  //margin-bottom: 40px;
+  background-color: @main-color-blue;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
 
-        //     span {
-        //         color: @btn-border-color;
-        //     }
-        // }
- }
-
-
-
- .feature-section {
-     //border: 1px solid white;
-     //margin-bottom: 40px;
-     background-color: @main-color-blue;
-     padding-top: 70px;
-     padding-bottom: 70px;
-     display: flex;
-     flex-wrap: wrap;
-
-
-        .eye-row {
-            display: flex;
-            margin-bottom: 20px;
-            //border: 1px solid black;
-
-                .fa-eye {
-                    width: 50%;
-                    //border: 1px solid black;
-                    font-size: 150px;
-                    text-align: center;
-                    color: @icon-color;
-
-                        @media @phone {
-                            display: none;
-                        }
-                }
-
-        }
-        // .fa-eye {
-        //     color: white;
-        //     font-size: 100px;
-        //     width: 50px;
-        //     margin-right: 300px
-
-            
-        // }
-
-        .schedule-row {
-            display: flex;
-            margin-bottom: 50px;
-            margin-top: 50px;
-            //border: 1px solid black;
-
-                .fa-calendar-alt {
-                    width: 50%;
-                    //border: 1px solid black;
-                    font-size: 150px;
-                    text-align: center;
-                    color: @icon-color;
-
-                    @media @phone {
-                        display: none;
-                    }
-                }
-        }
-
-            .edit-row {
-                display: flex;
-                margin-bottom: 50px;
-
-                
-               // border: 1px solid black;
-            
-
-                    .fa-edit {
-                        width: 50%;
-                        //border: 1px solid black;
-                        font-size: 150px;
-                        text-align: center;
-                        color: @icon-color;
-
-                        @media @phone {
-                            display: none;
-                        }
-                    }
-            }
-
-        // .fa-calendar-alt {
-        //     color: white;
-        //     font-size: 50px;
-        //     width: 50%;
-        // }
-
-        // .fa-edit {
-        //     color: white;
-        //     font-size: 50px;
-        //     width: 50%;
-        // }
-        
-
-        @keyframes float {
-            0% {
-                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-                transform: translatey(0px);
-            }
-            50% {
-                box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-                transform: translatey(-20px);
-            }
-            100% {
-                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-                transform: translatey(0px);
-            }
-        }
-
-        .feature-card {
-            //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            //box-shadow: 0 4px 8px 0 @btn-border-color;
-            //border: 1px solid black;
-            margin: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 5px;
-            width: 50%; 
-            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-            transform: translatey(0px);
-            animation: float 6s ease-in-out infinite;
-            background-color: @card-color;
-
-            @media @phone {
-                .phone-width();
-                margin: 0px;
-                animation: none;
-            }
-            
-           
-            p {
-                border: none;
-                color: @icon-color;
-            }
-
-                .feature-heading {
-                    //border: 1px solid black;
-                    //color: @btn-border-color;
-                    color: @btn-border-color;
-
-                
-                }
-
-        }
-
- }
-
- 
-
- .login-section {
-     display: flex;
-     justify-content: center;
-     background-color: @main-color-blue;
-     padding-top: 70px;
-     //border: 1px solid black;
-    
-
-        .fat-login {
-            display: flex;
-            justify-content: center;
-            padding: 20px 40px;
-            border: 2px solid @btn-border-color;
-            border-radius: 5px;
-            background-color: @main-color-blue;
-            color: @btn-border-color;
-            font-size: 60px;
-            
-            
-        }
- }
-
- a {
-     text-decoration: none;
- }
-
-
- // about page 
-
-
-
-
- .tabs {
-     //border: 1px solid red;
-     display: flex;
-     flex-direction: row;
-     margin-bottom: 35px;
-     //border: 1px solid black;
-     
-        @media @phone {
-            .phone-width();
-
-        }
-     
-        .tab {
-                width: 75%;
-                cursor: pointer;
-                border: 1px solid @btn-border-color;
-                margin: 10px;
-                display: flex;
-                justify-content: center;
-                border-radius: 10px;
-                color: @btn-border-color;
-                padding: 10px;
-                
-                &:hover {
-                   color: white;
-                }
-                font-family: @main-font;
-                font-size: 10px;
-
-        }
-
- }
-
-    .card-container {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-
-            @media @phone {
-                display: flex;
-                justify-content: space-around;
-
-            }
-       
-
-               img{
-                   height: auto;
-                   width: 100%;
-                   max-height: 100%;
-                   max-width: 400px;
-                   //margin: 1rem;
-                   border-radius: 50%;
-                   
-               }
-       
-        }
-
-    
- 
- .full-width {
-     width: 100%;
-     margin: 0 auto;
- }
- 
- .card {
+  .eye-row {
+    display: flex;
+    margin-bottom: 20px;
     //border: 1px solid black;
-    width: 30%;
-    margin: 1rem;
-    border-radius: 1rem;
+
+    .fa-eye {
+      width: 50%;
+      //border: 1px solid black;
+      font-size: 150px;
+      text-align: center;
+      color: @icon-color;
+
+      @media @phone {
+        display: none;
+      }
+    }
+  }
+  // .fa-eye {
+  //     color: white;
+  //     font-size: 100px;
+  //     width: 50px;
+  //     margin-right: 300px
+
+  // }
+
+  .schedule-row {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    //border: 1px solid black;
+
+    .fa-calendar-alt {
+      width: 50%;
+      //border: 1px solid black;
+      font-size: 150px;
+      text-align: center;
+      color: @icon-color;
+
+      @media @phone {
+        display: none;
+      }
+    }
+  }
+
+  .edit-row {
+    display: flex;
+    margin-bottom: 50px;
+
+    // border: 1px solid black;
+
+    .fa-edit {
+      width: 50%;
+      //border: 1px solid black;
+      font-size: 150px;
+      text-align: center;
+      color: @icon-color;
+
+      @media @phone {
+        display: none;
+      }
+    }
+  }
+
+  // .fa-calendar-alt {
+  //     color: white;
+  //     font-size: 50px;
+  //     width: 50%;
+  // }
+
+  // .fa-edit {
+  //     color: white;
+  //     font-size: 50px;
+  //     width: 50%;
+  // }
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+
+  .feature-card {
+    //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    //box-shadow: 0 4px 8px 0 @btn-border-color;
+    //border: 1px solid black;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    width: 50%;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
     background-color: @card-color;
-    height: auto;
-    padding: 1rem;
+
+    @media @phone {
+      .phone-width();
+      margin: 0px;
+      animation: none;
+    }
+
+    p {
+      border: none;
+      color: @icon-color;
+    }
+
+    .feature-heading {
+      //border: 1px solid black;
+      //color: @btn-border-color;
+      color: @btn-border-color;
+    }
+  }
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  background-color: @main-color-blue;
+  padding-top: 70px;
+  //border: 1px solid black;
+
+  .fat-login {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    border: 2px solid @btn-border-color;
+    border-radius: 5px;
+    background-color: @main-color-blue;
+    color: @btn-border-color;
+    font-size: 60px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+// about page
+
+.tabs {
+  //border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+  //border: 1px solid black;
+
+  @media @phone {
+    .phone-width();
+    //border: 1px solid red;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab {
+    width: 75%;
+    cursor: pointer;
+    border: 2px solid @btn-border-color;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    color: @btn-border-color;
+    padding: 10px;
+
+    &:hover {
+      color: white;
+    }
+    font-family: @main-font;
+    font-size: 10px;
+
+    @media @phone {
+      .phone-width();
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  //border: 1px solid black;
+
+  @media @phone {
+    .phone-width();
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: @main-font;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
-    color: @btn-border-color;
+  }
 
+  img {
+    height: auto;
+    width: 100%;
+    max-height: 100%;
+    max-width: 400px;
+    //margin: 1rem;
+    border-radius: 50%;
+  }
 }
 
- .active-tab {
-    //background-color: @icon-color;
-    color:@btn-border-color;
-    //border: 2px solid black;
+.full-width {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  //border: 1px solid black;
+  width: 45%;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: @card-color;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: @main-font;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  color: @btn-border-color;
+  //border: 1px solid black;
+
+  img {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+
+  @media @phone {
+    .phone-width();
+    margin: 0px;
+    animation: none;
+    margin-bottom: 10px;
+  }
+
+  @media @tablet {
+    width: 100%;
+    animation: none;
+  }
+}
+
+.active-tab {
+  //background-color: @icon-color;
+  color: @btn-border-color;
+  //border: 2px solid black;
 }
